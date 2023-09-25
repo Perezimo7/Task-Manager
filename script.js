@@ -8,10 +8,14 @@ function HandleSubmit() {
     
 
 if (tasktext !== '') {
-    // addTask(tasktext)
+    addTask(tasktext)
     taskinput.value = '',
     taskinput.focus()
 }else{
     alert('please, fill in the input field')
 };
+
+function addTask(text) {
+    console.log(text);
+}
 }
